@@ -54,3 +54,23 @@ valueDisplays.forEach(valueDisplays => {
 
 //loader
 
+// back to top btn
+let topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", ()=>{
+  // let scrollY = window.scrollY;
+  if(window.scrollY > 900){
+    topBtn.classList.remove("d-none");
+    topBtn.classList.add("d-block");
+    topBtn.classList.add("animate__animated");
+    topBtn.classList.add("animate__fadeInUp");
+    topBtn.classList.remove("animate__fadeOutDown");
+  }
+  else{
+    topBtn.classList.add("d-none");
+    topBtn.classList.add("d-block");
+    // topBtn.classList.add("animate__animated");
+    topBtn.classList.remove("animate__fadeInUp");
+    topBtn.classList.add("animate__fadeOutDown");
+  }
+})

@@ -73,3 +73,10 @@
 .display-load{
   display: none;
 }
+.topBtnAnimation{
+  transform: translate3d(0, 100px, 0);
+  opacity: 0;
+  transition-property: opacity,transform;
+  transition-duration: .4s;
+  transition-timing-function: ease;
+}
